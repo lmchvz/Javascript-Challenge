@@ -1,3 +1,5 @@
+///////////////////////////////////// Add Data to HTML Table 
+
 // Get a reference to the table body
 var tbody = d3.select("tbody");
 
@@ -9,6 +11,8 @@ data.forEach((ufoData) => {
       cell.text(value);
     });
   });
+
+///////////////////////////////////// Add Filter using Button Click Event 
 
 // Get a reference to the button
 var button = d3.select("#filter-btn");
@@ -41,5 +45,28 @@ button.on("click", () => {
           cell.text(value);
         });
       });
+
+});
+
+///////////////////////////////////// Clear Filter and Fill Table with All Data 
+
+// Get a reference to the button
+var button = d3.select("#clr-filter");
+
+// Attach event 
+button.on("click", () => {
+
+  var tbody = d3.select("tbody");
+
+  // Clear out current data in table 
+  tbody.html("");
+  // Loop through to append table with data
+  data.forEach((ufoData) => {
+      var row = tbody.append("tr");
+      Object.entries(ufoData).forEach(([key, value]) => {
+        var cell = row.append("td");
+        cell.text(value);
+      });
+    });
 
 });
