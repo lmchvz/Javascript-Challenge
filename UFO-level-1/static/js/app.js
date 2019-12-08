@@ -36,7 +36,9 @@ button.on("click", () => {
 
     // Apply our filter
     var tableData = data.filter(dateSelection);
-    
+
+  
+
     // Loop through to append table with New Data
     tableData.forEach((newData) => {
         var row = tbody.append("tr");
@@ -46,9 +48,14 @@ button.on("click", () => {
         });
       });
 
+    // If Table is 0 in length provide message to Choose New Date or Clear Filter 
+      if(tableData.length === 0) {
+      alert('ERROR: No Available Data for Date, Please Enter New Date OR Clear Filter');}
+
+
 });
 
-///////////////////////////////////// Clear Filter and Fill Table with All Data 
+///////////////////////////////////// Clear Filter Button and Fill Table with All Data 
 
 // Get a reference to the button
 var button = d3.select("#clr-filter");
