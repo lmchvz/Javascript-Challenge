@@ -1,4 +1,4 @@
-# JavaScript Challenge 
+# Javascript Challenge 
 
 ### Project Description: 
 
