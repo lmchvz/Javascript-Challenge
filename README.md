@@ -1,13 +1,13 @@
 # JavaScript Challenge 
 
-## Project Description
+## Project Description: 
 
-The goal of the project was to visualize UFO Sighting Data by using HTML, Javascript, Bootstrap and the D3.js library.
+The goal of the project was to visualize UFO Sighting Data as a table with a functional filter to search for specific UFO sightings. 
 
-A basic HTML web page was created using the UFO dataset in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
+## Tool Used: 
 
-Make sure you have a column for date/time, city, state, country, shape, and comment at the very least.
-Use a date form in your HTML document and write JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
+HTML, Javascript, Bootstrap, CSS and the D3.js library.
+
 
 ## Link to finished assignment: 
 
