@@ -11,4 +11,4 @@ Use a date form in your HTML document and write JavaScript code that will listen
 
 ## Link to finished assignment: 
 
-https://lmchvz.github.io/Javascript-Challenge
+https://lmchvz.github.io/javascript-challenge
